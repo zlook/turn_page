@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>翻页程序</title>
+    <style>
+        button {
+            background-color: #f44336;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            border-radius: 8px;
+        }
+
+        .pagedown {
+            background-color: #008CBA
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            transform-style: preserve-3d;
+            transform: perspective(800px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p><button class="pageup" onclick="turn_page('pageup')">上翻</button></p>
+        <p><button class="pagedown" onclick="turn_page('pagedown')">下翻</button></p>
+    </div>
+    <script>
+        function turn_page(command) {
+            var ajax = new XMLHttpRequest();
+
+            if (command == "pageup") {
+                console.log("pageup")
+                //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url
+                ajax.open('get', "/page_up");
+                //步骤三:发送请求
+                ajax.send();
+            }
+            if (command == 'pagedown') {
+                console.log("pagedown")
+                //步骤二:设置请求的url参数,参数一是请求的类型,参数二是请求的url
+                ajax.open('get', "/page_down");
+                //步骤三:发送请求
+                ajax.send();
+            }
+        }
+    </script>
+</body>
+
+</html>

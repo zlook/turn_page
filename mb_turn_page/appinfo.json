@@ -1,0 +1,14 @@
+{
+  "uuid": "36eee75e28a7cbf5ea614530b1444c80",
+  "name": "ppt_page",
+  "icon": "PAGE_DEMON_ICON",
+  "version": "0.0.3",
+  "watchface": "false",
+  "resources": [
+	  {
+        "type": "bmp",
+        "name": "PAGE_DEMON_ICON",
+        "file": "icon.bmp"
+      }
+      ]
+      }

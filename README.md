@@ -30,11 +30,11 @@ pip3 install bottle　# 用于接收响应客户端的http请求
 
 #### 演示视频
 
-##### 手表端演示视频
-[![mbwatch the video](./video/watch.png)](./video/watch.mp4)
+##### 手表端图片
+![手表端图片](./image/watch.png)
 
-##### web端演示视频
-[![web the video](./video/mobile.png)](./video/mobile.mp4)
+##### web端图片
+![ web端图片](./image/mobile.png)
 
 #### bug说明
 

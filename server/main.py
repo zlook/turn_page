@@ -15,13 +15,13 @@ def index():
 @app.route("/page_up")
 def page_up():
     pyautogui.press('pageup')
-    return {"code": 0, "msg": 1}
+    return {"msg": 1}
 
 
 @app.route("/page_down")
 def page_down():
     pyautogui.press('pagedown')
-    return {"code": 0, "msg": 2}
+    return {"msg": 2}
 
 
 app.run(host="0.0.0.0", port=8089)
